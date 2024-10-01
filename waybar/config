@@ -1,8 +1,7 @@
 {
     "modules-left": ["hyprland/workspaces", "hyprland/mode"],
-    "modules-center": ["clock", "idle_inhibitor"],
-    /* "modules-right": ["tray", "custom/scratchpad-indicator", "pulseaudio", "custom/power"], */
-    "modules-right": ["tray", "custom/scratchpad-indicator", "pulseaudio", "custom/power"],
+    "modules-center": ["clock"],
+    "modules-right": ["battery", "network",  "pulseaudio", "custom/power"],
 
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
@@ -13,18 +12,6 @@
         "format-disconnected": "", 
         "max-length": 50,
         "on-click": "kitty -e 'nmtui'"
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        },
-		"on-click": "bash /home/dg/.local/bin/toggleRemote"
-    },
-    "tray": {
-        "icon-size": 15,
-        "spacing": 10
     },
     "clock": {
         // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -49,17 +36,14 @@
         },
         "on-click": "pavucontrol"
     },
-	"custom/power": {
-		"format": " ",
-		"on-click": "systemctl poweroff"
-	},
-    "custom/scratchpad-indicator": {
-        "format-text": "{}hi",
-        "return-type": "json",
-        "interval": 3,
-        "exec": "~/.local/bin/scratchpad-indicator 2> /dev/null",
-        "exec-if": "exit 0",
-        "on-click": "swaymsg 'scratchpad show'",
-        "on-click-right": "swaymsg 'move scratchpad'"
+    
+    "custom/power": {
+	"format": " ",
+	"on-click": "systemctl poweroff"
+    },
+
+    "battery": {
+	"format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
     }
 }
