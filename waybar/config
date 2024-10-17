@@ -1,11 +1,8 @@
 {
-    "modules-left": ["hyprland/workspaces", "hyprland/mode"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["battery", "network",  "pulseaudio", "custom/power"],
 
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
     "network": {
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ifname} ",
@@ -14,9 +11,8 @@
         "on-click": "kitty -e 'nmtui'"
     },
     "clock": {
-        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        // "format-alt": "{:%Y-%m-%d}"
-		"on-click": "gnome-calendar"
+        "format": "{:%A, %B %d - %H:%M }",
+	"on-click": "gnome-calendar"
     },
     "pulseaudio": {
         "format": "{volume}% {icon} ",
