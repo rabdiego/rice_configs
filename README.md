@@ -6,5 +6,7 @@ configs for my super riced computer
 - Lockscreen: Hyprlock
 
 ![image](screenshots/fastfetch.png)
+![image](screenshots/vscode.png)
 ![image](screenshots/tiling.png)
+![image](screenshots/wofi.png)
 ![image](screenshots/hyprlock.png)
