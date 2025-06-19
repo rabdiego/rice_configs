@@ -3,7 +3,7 @@
 opacity = 0.6
 
 [colors.primary]
-background = '#0E1415'
+background = '#080300'
 foreground = '#CECECE'
 
 [colors.cursor]
