@@ -1,0 +1,16 @@
+format = """
+$directory$git_branch $character
+"""
+
+[directory]
+style = "bg:yellow fg:#1e1e1e"
+format = "[](bg:yellow fg:black)[$path]($style)[](fg:yellow)"
+
+[git_branch]
+symbol = " "
+style = "bg:green fg:#1e1e1e"
+format = "[](bg:green fg:black)[$symbol$branch]($style)[](fg:green)"
+
+[character]
+success_symbol = "[➜](bold red) "
+error_symbol = "[➜](bold red) "

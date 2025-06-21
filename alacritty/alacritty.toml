@@ -29,3 +29,10 @@ blue = '#a1c8a4'
 magenta = '#ecb8a2'
 cyan = '#c8e5ab'
 white = '#ffffff'
+
+[font]
+
+normal = { family = "Hack Nerd Font", style = "Regular"}
+bold = { family = "Hack Nerd Font", style = "Bold"}
+italic = { family = "Hack Nerd Font", style = "Italic"}
+bold_italic = { family = "Hack Nerd Font", style = "Bold Italic"}
