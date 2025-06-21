@@ -4,23 +4,23 @@
 }
 
 #entry:selected {
-  background-color: #54593b;
+  background-color: #db784d;
 }
 
 #text:selected {
-  color: #f0f0f0;
+  color: #f1decb;
 }
 
 #window {
   padding: 2px;
-  background-color: rgba(8, 3, 0, 0.65);
+  background-color: rgba(40, 36, 33, 0.65);
   border-radius: 8pt;
   font-family: 'Inter Nerd Font Propo','FuraCode Nerd Font Mono';
   font-size: 15px;
 }
 
 #input {
-  border: 2px solid #663300;
+  border: 2px solid #db784d;
   background-color: #080300;
   color: #d8dee9;
   padding: 3px 5px 3px 5px;

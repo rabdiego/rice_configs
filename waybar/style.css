@@ -2,7 +2,7 @@
     border: none;
     font-family: Font Awesome, Roboto, Arial, sans-serif;
     font-size: 13px;
-    color: #ffffff;
+    color: #f1decb;
     border-radius: 20px;
 }
 
@@ -14,16 +14,16 @@ window#waybar {
 }
 /*-----module groups----*/
 .modules-right {
-	background-color: rgba(14,20,21,0.85);
+	background-color: rgba(40,36,33,0.85);
     margin: 2px 10px 0 0;
 }
 .modules-center {
-	background-color: rgba(14,20,21,0.85);
+	background-color: rgba(40,36,33,0.85);
     margin: 2px 0 0 0;
 }
 .modules-left {
     margin: 2px 0 0 5px;
-	background-color: #663300;
+	background-color: #282421;
 }
 /*-----modules indv----*/
 #workspaces button {
@@ -32,11 +32,11 @@ window#waybar {
 }
 #workspaces button:hover {
     box-shadow: inherit;
-	background-color: #53593b;
+	background-color: #95cc5e;
 }
 
 #workspaces button.active {
-	background-color: #54593b;
+	background-color: #db784d;
 }
 
 #clock,
@@ -59,7 +59,7 @@ window#waybar {
     font-weight: bold;
 }
 #custom-power {
-    background-color: #54593b;
+    background-color: #95cc5e;
     border-radius: 100px;
     margin: 5px 5px;
     padding: 1px 1px 1px 6px;
