@@ -1,4 +1,7 @@
 {
+    "margin-left": 20,
+    "margin-right": 20,
+    "margin-top": 20,
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["battery", "network",  "pulseaudio", "custom/power"],

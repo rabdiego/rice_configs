@@ -7,16 +7,17 @@
   background-color: #db784d;
 }
 
-#text:selected {
+#text {
   color: #f1decb;
 }
 
 #window {
   padding: 2px;
-  background-color: rgba(40, 36, 33, 0.65);
+  background-color: #282421;
   border-radius: 8pt;
   font-family: 'Inter Nerd Font Propo','FuraCode Nerd Font Mono';
   font-size: 15px;
+  border: 2px solid #db784d;
 }
 
 #input {

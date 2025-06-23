@@ -3,26 +3,33 @@
     font-family: Font Awesome, Roboto, Arial, sans-serif;
     font-size: 13px;
     color: #f1decb;
-    border-radius: 20px;
+    margin: 1px;
 }
 
 window {
 	/*font-weight: bold;*/
 }
 window#waybar {
-    background: rgba(0, 0, 0, 0);
+    background: #282421;
+    border: 2px solid #db784d;
+    border-radius: 10px;
 }
+
+window#waybar>box {
+	padding:5px;
+}
+
 /*-----module groups----*/
 .modules-right {
-	background-color: rgba(40,36,33,0.85);
-    margin: 2px 10px 0 0;
+	background-color: #282421;
+    margin: 0px 2px 0 0;
 }
 .modules-center {
-	background-color: rgba(40,36,33,0.85);
-    margin: 2px 0 0 0;
+	background-color: #282421;
+    margin: 0px 0 0 0;
 }
 .modules-left {
-    margin: 2px 0 0 5px;
+    margin: 0px 0 0 2px;
 	background-color: #282421;
 }
 /*-----modules indv----*/
@@ -60,8 +67,7 @@ window#waybar {
 }
 #custom-power {
     background-color: #95cc5e;
-    border-radius: 100px;
-    margin: 5px 5px;
+    border-radius: 5px;  
     padding: 1px 1px 1px 6px;
 }
 /*-----Indicators----*/
