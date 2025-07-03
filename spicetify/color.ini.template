@@ -1,0 +1,17 @@
+[Base]
+text               = %foreground%
+subtext            = e2e2e2
+main               = %backerground%
+sidebar            = %background%
+player             = %background%
+card               = %backerground%
+shadow             = %backerground%
+selected-row       = %white%
+button             = %main%
+button-active      = %main%
+button-disabled    = 434C5E
+tab-active         = FF4151
+notification       = 00010A
+notification-error = FF4151
+misc               = 00010A
+highlight 	   = FFFFFF 

@@ -1,0 +1,38 @@
+[window]
+
+opacity = 0.6
+
+[colors.primary]
+background = '#%background%'
+foreground = '#%foreground%'
+
+[colors.cursor]
+text = '#%black%'
+cursor = '#%white%'
+
+[colors.normal]
+black = '#%black%'
+red = '#%red%'
+green = '#%green%'
+yellow = '#%yellow%'
+blue = '#%blue%'
+magenta = '#%magenta%'
+cyan = '#%cyan%'
+white = '#%white%'
+
+[colors.bright]
+black = '#%bblack%'
+red = '#%bred%'
+green = '#%bgreen%'
+yellow = '#%byellow%'
+blue = '#%bblue%'
+magenta = '#%bmagenta%'
+cyan = '#%bcyan%'
+white = '#%bwhite%'
+
+[font]
+
+normal = { family = "Hack Nerd Font", style = "Regular"}
+bold = { family = "Hack Nerd Font", style = "Bold"}
+italic = { family = "Hack Nerd Font", style = "Italic"}
+bold_italic = { family = "Hack Nerd Font", style = "Bold Italic"}

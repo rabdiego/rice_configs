@@ -6,18 +6,18 @@ $character
 [conda]
 ignore_base=false
 symbol = "󱔎 "
-style ="bg:blue fg:#1e1e1e"
+style ="bg:blue fg:foreground"
 format = "[](fg:blue)[$symbol$environment]($style)[](fg:blue)"
 
 [directory]
-style = "bg:yellow fg:#1e1e1e"
+style = "bg:yellow fg:foreground"
 home_symbol = " "
 format = "[](fg:yellow bg:yellow)[  $symbol$path]($style)[](fg:yellow)"
 truncate_to_repo = false
 
 [git_branch]
 symbol = " "
-style = "bg:green fg:#1e1e1e"
+style = "bg:green fg:foreground"
 format = "[](fg:green)[$symbol$branch]($style)[](fg:green)"
 
 [character]

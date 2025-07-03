@@ -1,0 +1,27 @@
+.encore-dark-theme .encore-bright-accent-set {
+    --background-base: var(--spice-button-active);
+    --background-highlight: #%highlight%;
+    --background-press: #%highlight%;
+    --background-elevated-base: #%highlight%;
+    --background-elevated-highlight: #%highlight%;
+    --background-elevated-press: #%highlight%;
+    --background-tinted-base: var(--spice-button-active);
+    --background-tinted-highlight: var(--spice-button-active);
+    --background-tinted-press: var(--spice-button-active);
+    --text-base: var(--spice-sidebar);
+    --text-subdued: var(--spice-sidebar);
+    --text-bright-accent: var(--spice-sidebar);
+    --text-negative: var(--spice-sidebar);
+    --text-warning: var(--spice-sidebar);
+    --text-positive: var(--spice-sidebar);
+    --text-announcement: var(--spice-sidebar);
+    --essential-base: var(--spice-sidebar);
+    --essential-subdued: var(--spice-sidebar);
+    --essential-bright-accent: var(--spice-sidebar);
+    --essential-negative: var(--spice-sidebar);
+    --essential-warning: var(--spice-sidebar);
+    --essential-positive: var(--spice-sidebar);
+    --essential-announcement: var(--spice-sidebar);
+    --decorative-base: var(--spice-sidebar);
+    --decorative-subdued: #1abc54
+}

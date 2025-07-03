@@ -1,0 +1,61 @@
+#!/bin/bash
+
+THEME_FILE="$HOME/Documents/projects/rice_configs/themes/$1.sh"
+
+if [ ! -f "$THEME_FILE" ]; then
+    echo "Theme not found: $1"
+    exit 1
+fi
+
+# Source the theme file to load the color variables
+source "$THEME_FILE"
+
+# List of template files and their destination
+declare -A files=(
+    ["$HOME/Documents/projects/rice_configs/alacritty/alacritty.toml.template"]="$HOME/.config/alacritty/alacritty.toml"
+    ["$HOME/Documents/projects/rice_configs/chrome/userChrome.css.template"]="$HOME/.mozilla/firefox/3j5wjipw.new-default/chrome/userChrome.css"
+    ["$HOME/Documents/projects/rice_configs/hypr/hyprland.conf.template"]="$HOME/.config/hypr/hyprland.conf"
+    ["$HOME/Documents/projects/rice_configs/hypr/hyprlock.conf.template"]="$HOME/.config/hypr/hyprlock.conf"
+    ["$HOME/Documents/projects/rice_configs/hypr/hyprpaper.conf.template"]="$HOME/.config/hypr/hyprpaper.conf"
+    ["$HOME/Documents/projects/rice_configs/spicetify/color.ini.template"]="$HOME/.config/spicetify/Themes/Earthsong/color.ini"
+    ["$HOME/Documents/projects/rice_configs/spicetify/user.css.template"]="$HOME/.config/spicetify/Themes/Earthsong/user.css.template"
+    ["$HOME/Documents/projects/rice_configs/waybar/style.css.template"]="$HOME/.config/waybar/style.css"
+    ["$HOME/Documents/projects/rice_configs/wofi/style.css.template"]="$HOME/.config/wofi/style.css"
+)
+
+# Loop through the files and apply the theme
+for template in "${!files[@]}"; do
+    dest="${files[$template]}"
+    # Use sed to find and replace placeholders
+    sed -e "s,%background%,$background,g" \
+        -e "s,%backerground%,$backerground,g" \
+        -e "s,%foreground%,$foreground,g" \
+        -e "s,%main%,$main,g" \
+        -e "s,%highlight%,$highlight,g" \
+        -e "s,%black%,$black,g" \
+        -e "s,%red%,$red,g" \
+        -e "s,%green%,$green,g" \
+        -e "s,%yellow%,$yellow,g" \
+        -e "s,%blue%,$blue,g" \
+        -e "s,%magenta%,$magenta,g" \
+        -e "s,%cyan%,$cyan,g" \
+        -e "s,%white%,$white,g" \
+        -e "s,%bblack%,$bblack,g" \
+        -e "s,%bred%,$bred,g" \
+        -e "s,%bgreen%,$bgreen,g" \
+        -e "s,%byellow%,$byellow,g" \
+        -e "s,%bblue%,$bblue,g" \
+        -e "s,%bmagenta%,$bmagenta,g" \
+        -e "s,%bcyan%,$bcyan,g" \
+        -e "s,%bwhite%,$bwhite,g" \
+        -e "s,%wallpaper%,$wallpaper,g" \
+        "$template" > "$dest"
+done
+
+
+hyprctl reload
+pkill waybar
+nohup waybar &
+hyprctl hyprpaper preload "$wallpaper"
+hyprctl hyprpaper wallpaper ",$wallpaper"
+spicetify apply

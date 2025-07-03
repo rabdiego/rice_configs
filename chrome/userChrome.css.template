@@ -1,0 +1,56 @@
+#TabsToolbar {
+  background-color: #%background% !important;
+}
+
+.tabbrowser-tab {
+  background-color: #%background% !important;
+  color: #%foreground% !important;
+  border-radius: 4px 4px 0 0 !important;
+}
+
+.tabbrowser-tab[selected="true"] {
+  background-color: #%black% !important;
+}
+
+.tabbrowser-tab:hover {
+  background-color: #%background% !important;
+}
+
+#nav-bar {
+  background-color: #%black% !important;
+}
+
+toolbarbutton, .toolbarbutton-1 {
+  fill: #%main% !important;
+}
+
+toolbarbutton:hover {
+  background-color: #%main% !important;
+}
+
+#urlbar, #searchbar {
+  background-color: #%background% !important;
+  color: #E5F2F0 !important;
+  border-radius: 4px !important;
+}
+
+menupopup {
+  --menu-background-color: #%background% !important;
+  --menu-color: #%background% !important;
+  --menuitem-hover-background-color: #3E575A !important;
+  --menu-border-color: #456464 !important;
+}
+
+#PlacesToolbarItems {
+  background-color: #%black% !important;
+}
+
+toolbarbutton#tabs-newtab-button {
+  background-color: #%background% !important;
+  fill: #CAD8D3 !important;
+  border-radius: 10px !important;
+}
+
+.tabbrowser-tab .tab-icon-image[src*="loading"] {
+  filter: hue-rotate(180deg) brightness(1.2) !important;
+}
