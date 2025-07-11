@@ -20,7 +20,10 @@ declare -A files=(
     ["$HOME/Documents/projects/rice_configs/spicetify/color.ini.template"]="$HOME/.config/spicetify/Themes/Earthsong/color.ini"
     ["$HOME/Documents/projects/rice_configs/spicetify/user.css.template"]="$HOME/.config/spicetify/Themes/Earthsong/user.css.template"
     ["$HOME/Documents/projects/rice_configs/waybar/style.css.template"]="$HOME/.config/waybar/style.css"
+    ["$HOME/Documents/projects/rice_configs/waybar/config"]="$HOME/.config/waybar/config"
     ["$HOME/Documents/projects/rice_configs/wofi/style.css.template"]="$HOME/.config/wofi/style.css"
+    ["$HOME/Documents/projects/rice_configs/wofi/config"]="$HOME/.config/wofi/config"
+    ["$HOME/Documents/projects/rice_configs/starship.toml.template"]="$HOME/.config/starship.toml"
 )
 
 # Loop through the files and apply the theme
@@ -32,6 +35,7 @@ for template in "${!files[@]}"; do
         -e "s,%foreground%,$foreground,g" \
         -e "s,%main%,$main,g" \
         -e "s,%highlight%,$highlight,g" \
+        -e "s,%highlight2%,$highlight2,g" \
         -e "s,%black%,$black,g" \
         -e "s,%red%,$red,g" \
         -e "s,%green%,$green,g" \

@@ -3,8 +3,9 @@
 export background='211f1f'
 export backerground='000000'
 export foreground='b0b0b0'
-export main='3b3937'
-export highlight='8c8c8c'
+export main='8c8c8c'
+export highlight='ffffff'
+export highlight2='c4c4c4'
 
 export black='3b3937'
 export red='ba0e2e'

@@ -5,6 +5,7 @@ export backerground='000000'
 export foreground='ffffff'
 export main='3d8e91'
 export highlight='f0624b'
+export highlight2='b4b7ad'
 
 export black='373232'
 export red='ba0e2e'

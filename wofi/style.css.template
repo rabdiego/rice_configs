@@ -1,5 +1,5 @@
 #entry {
-  border-radius: 3px;
+  border-radius: 0px;
   padding: 2px 3px 2px 3px;
 }
 
@@ -13,19 +13,18 @@
 
 #window {
   padding: 2px;
-  background-color: #%background%;
-  border-radius: 8pt;
+  background-color: #%black%;
+  border-radius: 0pt;
   font-family: 'Inter Nerd Font Propo','FuraCode Nerd Font Mono';
   font-size: 15px;
-  border: 2px solid #%main%;
+  /*border: 2px solid #%main%;*/
 }
 
 #input {
-  border: 2px solid #%main%;
-  background-color: #%backerground%;
+  background-color: #%background%;
   color: #%foreground%;
   padding: 3px 5px 3px 5px;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 #inner-box {

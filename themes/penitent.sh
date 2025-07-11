@@ -4,7 +4,9 @@ export background='162520'
 export backerground='000000'
 export foreground='b9cec7'
 export main='11a361'
-export highlight='ea983a'
+export highlight='e54334'
+export highlight2='ea983a'
+
 
 export black='28453c'
 export red='ba0e2e'

@@ -1,0 +1,25 @@
+format = """
+$directory $conda $git_branch
+$character
+"""
+
+[conda]
+ignore_base=false
+symbol = "󱔎 "
+style ="bg:#%highlight2% fg:#%background%"
+format = "[](fg:#%highlight2%)[$symbol$environment]($style)[](fg:#%highlight2%)"
+
+[directory]
+style = "bg:#%main% fg:#%background%"
+home_symbol = " "
+format = "[](fg:#%main% bg:#%main%)[  $symbol$path]($style)[](fg:#%main%)"
+truncate_to_repo = false
+
+[git_branch]
+symbol = " "
+style = "bg:#%highlight% fg:#%background%"
+format = "[](fg:#%highlight%)[$symbol$branch]($style)[](fg:#%highlight%)"
+
+[character]
+success_symbol = "[➜](bold #%main%) "
+error_symbol = "[➜](bold red) "

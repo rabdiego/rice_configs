@@ -3,16 +3,16 @@
     font-family: Font Awesome, Roboto, Arial, sans-serif;
     font-size: 13px;
     color: #%foreground%;
-    margin: 1px;
+    margin: 0px;
 }
 
 window {
 	/*font-weight: bold;*/
 }
 window#waybar {
-    background: #%background%;
-    border: 2px solid #%main%;
-    border-radius: 10px;
+    background: #%black%;
+    border: 0px solid #%main%;
+    border-radius: 0px;
 }
 
 window#waybar>box {
@@ -21,22 +21,25 @@ window#waybar>box {
 
 /*-----module groups----*/
 .modules-right {
-	background-color: #%background%;
-    margin: 0px 2px 0 0;
+	background-color: #%black%;
+    margin: 0px 16px 0 0;
 }
 .modules-center {
-	background-color: #%background%;
+	background-color: #%black%;
     margin: 0px 0 0 0;
 }
 .modules-left {
-    margin: 0px 0 0 2px;
-	background-color: #%background%;
+    margin: 0px 0 0 16px;
+	background-color: #%black%;
 }
 /*-----modules indv----*/
 #workspaces button {
     padding: 1px 5px;
     background-color: transparent;
+    border-radius: 0px;
+    margin: 0px 6px 0 0;
 }
+
 #workspaces button:hover {
     box-shadow: inherit;
 	background-color: #%highlight%;
@@ -67,7 +70,7 @@ window#waybar>box {
 }
 #custom-power {
     background-color: #%highlight%;
-    border-radius: 5px;  
+    border-radius: 0px;  
     padding: 1px 1px 1px 6px;
 }
 /*-----Indicators----*/
