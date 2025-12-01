@@ -34,7 +34,7 @@ monitor=,preferred,auto,auto
 # See https://wiki.hyprland.org/Configuring/Keywords/
 
 # Set programs that you use
-$terminal = alacritty
+$terminal = kitty
 $fileManager = dolphin
 $menu = wofi --show drun
 
@@ -51,7 +51,7 @@ $menu = wofi --show drun
 # exec-once = waybar & hyprpaper & firefox
 exec-once = hyprpaper & waybar
 exec-once = hyprctl setcursor FossaCursors 24
-exec-once = choosetheme
+exec-once = applytheme earthsong
 
 #############################
 ### ENVIRONMENT VARIABLES ###
@@ -168,11 +168,6 @@ input {
     touchpad {
         natural_scroll = false
     }
-}
-
-# https://wiki.hyprland.org/Configuring/Variables/#gestures
-gestures {
-    workspace_swipe = false
 }
 
 # Example per-device config

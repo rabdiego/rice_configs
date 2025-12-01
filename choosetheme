@@ -1,0 +1,24 @@
+#!/bin/bash
+
+FAVORITES_FILE="$HOME/Documents/projects/rice_configs/favorites.txt"
+
+# Verifica se o arquivo existe
+if [[ ! -f "$FAVORITES_FILE" ]]; then
+    echo "Erro: Arquivo de favoritos não encontrado em $FAVORITES_FILE"
+    exit 1
+fi
+
+# Lê os favoritos em um array, ignorando linhas vazias
+mapfile -t FAVORITES < <(grep -v '^\s*$' "$FAVORITES_FILE")
+
+# Verifica se há temas disponíveis
+if [[ ${#FAVORITES[@]} -eq 0 ]]; then
+    echo "Erro: Nenhum tema listado no arquivo de favoritos."
+    exit 1
+fi
+
+# Escolhe um tema aleatório
+THEME="${FAVORITES[RANDOM % ${#FAVORITES[@]}]}"
+
+# Aplica o tema
+applytheme "$THEME"

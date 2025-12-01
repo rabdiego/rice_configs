@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/shi
 
-export background='32302f'
+export background='1d2021'
 export backerground='000000'
 export foreground='fbf1c7'
 export main='d79921'
@@ -26,3 +26,4 @@ export bcyan='8ec07c'
 export bwhite='ffffff'
 
 export wallpaper='/home/diego/Documents/projects/rice_configs/wallpapers/gruvbox.png'
+export sprite='/home/diego/Documents/projects/rice_configs/sprites/giratina.png'

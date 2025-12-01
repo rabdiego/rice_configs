@@ -10,7 +10,7 @@ window {
 	/*font-weight: bold;*/
 }
 window#waybar {
-    background: #%black%;
+    background: #%background%;
     border: 0px solid #%main%;
     border-radius: 0px;
 }
@@ -21,16 +21,16 @@ window#waybar>box {
 
 /*-----module groups----*/
 .modules-right {
-	background-color: #%black%;
+	background-color: #%background%;
     margin: 0px 16px 0 0;
 }
 .modules-center {
-	background-color: #%black%;
+	background-color: #%background%;
     margin: 0px 0 0 0;
 }
 .modules-left {
     margin: 0px 0 0 16px;
-	background-color: #%black%;
+	background-color: #%background%;
 }
 /*-----modules indv----*/
 #workspaces button {
@@ -46,6 +46,7 @@ window#waybar>box {
 }
 
 #workspaces button.active {
+    color: #%background%;
 	background-color: #%main%;
 }
 
@@ -70,6 +71,7 @@ window#waybar>box {
 }
 #custom-power {
     background-color: #%highlight%;
+    color: #%background%;
     border-radius: 0px;  
     padding: 1px 1px 1px 6px;
 }

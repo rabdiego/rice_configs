@@ -1,0 +1,37 @@
+# Font configuration
+font_family      Hack Nerd Font
+bold_font        Hack Nerd Font Bold
+italic_font      Hack Nerd Font Italic
+bold_italic_font Hack Nerd Font Bold Italic
+font_size        11.0
+
+# Opacity (requires Kitty >= 0.20.0 and a compositor)
+background_opacity 0.6
+
+# Cursor colors
+cursor            #%white%
+cursor_text_color #%black%
+
+# Primary colors
+foreground        #%foreground%
+background        #%background%
+
+# Normal colors
+color0  #%black%
+color1  #%red%
+color2  #%green%
+color3  #%yellow%
+color4  #%blue%
+color5  #%magenta%
+color6  #%cyan%
+color7  #%white%
+
+# Bright colors
+color8  #%bblack%
+color9  #%bred%
+color10 #%bgreen%
+color11 #%byellow%
+color12 #%bblue%
+color13 #%bmagenta%
+color14 #%bcyan%
+color15 #%bwhite%
